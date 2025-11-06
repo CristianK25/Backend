@@ -1,0 +1,67 @@
+# =================================================
+# Archivos de Comentarios y Ayuda
+# =================================================
+# Ignorar el archivo de ayuda generado por Spring Initializr
+HELP.md
+
+# =================================================
+# Archivos de Build y Dependencias (Gradle)
+# =================================================
+# Directorio de caché de Gradle
+.gradle/
+
+# Directorio de salida de la compilación
+build/
+
+# Archivos generados por la compilación
+out/
+
+# Evita que se ignoren los archivos del Gradle Wrapper, que sí deben estar en el repositorio.
+# La regla `*.jar` de más abajo los ignoraría si no fuera por esta excepción.
+!gradle/wrapper/gradle-wrapper.jar
+
+# =================================================
+# Archivos generados por el IDE
+# =================================================
+# Visual Studio Code
+.vscode/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# NetBeans
+nbproject/
+
+# Eclipse
+.settings/
+.project
+.classpath
+
+# =================================================
+# Archivos de Sistema Operativo
+# =================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =================================================
+# Archivos de Log y Paquetes
+# =================================================
+*.log
+*.jar
+*.war
+*.ear
+
+# =================================================
+# Archivo de variables de entorno
+# =================================================
+.env
