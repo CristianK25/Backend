@@ -33,7 +33,6 @@ import org.springframework.beans.factory.annotation.Value;
 @RestController
 @RequestMapping("/api/payments")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://127.0.0.1:5500") // Allow requests from your frontend
 public class PaymentController {
 
     private static final Logger logger = LoggerFactory.getLogger(PaymentController.class);
@@ -46,14 +45,15 @@ public class PaymentController {
     private String baseUrl;
 
     // URLs de redirecciÃ³n para el frontend
-    @Value("${frontend.url.success}")
+    @Value("${FRONTEND_URL_SUCCESS}")
     private String frontendSuccessUrl;
 
-    @Value("${frontend.url.failure}")
+    @Value("${FRONTEND_URL_FAILURE}")
     private String frontendFailureUrl;
 
-    @Value("${frontend.url.pending}")
+    @Value("${FRONTEND_URL_PENDING}")
     private String frontendPendingUrl;
+
 
     @PostMapping("/create-order")
     public ResponseEntity<?> createOrder(@Valid @RequestBody CreateOrderRequestDTO orderRequest) {
