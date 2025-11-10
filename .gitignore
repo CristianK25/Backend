@@ -4,11 +4,6 @@
 # Ignorar el archivo de ayuda generado por Spring Initializr
 HELP.md
 
-# =================================================
-# Archivos de Build y Dependencias (Gradle)
-# =================================================
-# Directorio de caché de Gradle
-.gradle/
 
 # Directorio de salida de la compilación
 build/
