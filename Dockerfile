@@ -8,7 +8,7 @@ COPY . .
 RUN ./gradlew clean build -x test
 
 # ---- Etapa 2: Imagen final liviana ----
-FROM openjdk:21-jdk-slim
+FROM eclipse-temurin:21-jdk-jammy
 WORKDIR /app
 
 # Crea un usuario no-root por seguridad
