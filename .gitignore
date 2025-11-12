@@ -4,7 +4,7 @@
 # Ignorar el archivo de ayuda generado por Spring Initializr
 HELP.md
 
-
+.gradle
 # Directorio de salida de la compilación
 build/
 
